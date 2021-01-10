@@ -13,6 +13,10 @@ export const alertText = 'Climate App';
 
 const defaultButtons = [{ text: 'Ok', onPress: () => false }];
 
+export const roundNumber = (value) => (Math.round(value));
+
+export const converteMetersToKilometers = (value) => (Math.round(value * 3.6));
+
 export const responseAlert = (
   message,
   buttons = defaultButtons,
