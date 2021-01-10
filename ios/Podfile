@@ -41,13 +41,3 @@ target 'climateApp' do
 
   use_native_modules!
 end
-
-target 'climateApp-tvOS' do
-  # Pods for climateApp-tvOS
-
-  target 'climateApp-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end

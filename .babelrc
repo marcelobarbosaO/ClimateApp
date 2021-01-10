@@ -1,0 +1,28 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "extensions": [
+          ".js",
+          ".ios.js",
+          ".android.js",
+          ".png",
+          ".jpg"
+        ],
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "@assets": "./src/assets",
+          "@components": "./src/components",
+          "@config": "./src/config",
+          "@scenes": "./src/scenes",
+          "@reducers": "./src/reducers",
+          "@actions": "./src/actions"
+        }
+      }
+    ]
+  ]
+}

@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
 import App from './src/index';
 
-AppRegistry.registerComponent('ClimateApp', () => App);
+AppRegistry.registerComponent('climateApp', () => App);

@@ -2,6 +2,10 @@ import { Dimensions, Platform, Alert } from 'react-native';
 import { ActionConst, Actions } from 'react-native-router-flux';
 import axios from 'axios';
 
+export const tokenOpenWeather = '7bb23deaf4e3c1294c4652aae5915b7e';
+export const urlWeatherInfo = (lat, lng) => `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${tokenOpenWeather}&units=metric&lang=pt_br`;
+export const urlLocationInfo = (lat, lng) => `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lng}&limit=5&appid=${tokenOpenWeather}`;
+
 export const { OS } = Platform;
 export const versionApp = '1.0.0';
 
