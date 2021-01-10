@@ -24,7 +24,7 @@ const Splash = () => {
   useEffect(() => {
     setTimeout(() => {
       Actions.home({ type: ActionConst.RESET });
-    }, 2000);
+    }, 3000);
   }, [])
 
   return (
