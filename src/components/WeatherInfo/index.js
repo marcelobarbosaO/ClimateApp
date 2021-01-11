@@ -43,6 +43,13 @@ const styles = {
     zIndex: 2,
     left: -50
   },
+  textTempAbsolute: {
+    fontWeight: 'bold',
+    position: 'absolute',
+    zIndex: 1,
+    left: -55,
+    bottom: -3
+  },
   icon: {
     position: 'relative',
     zIndex: 1,
@@ -73,11 +80,18 @@ const WeatherInfo = (props) => {
         <Title text={weather.weather[0].description} color={COLORS.white} size={17} />
         <View style={styles.rowTemp}>
           <Image source={{ uri: iconWeather, width: 200, height: 200 }} style={styles.icon} />
-          <Title
-            text={`${roundNumber(weather.main.temp)}º`}
-            color={COLORS.white}
-            size={100}
-            style={styles.textTemp} />
+          <View style={{ position: 'relative' }}>
+            <Title
+              text={`${roundNumber(weather.main.temp)}º`}
+              color={COLORS.black}
+              size={100}
+              style={styles.textTempAbsolute} />
+            <Title
+              text={`${roundNumber(weather.main.temp)}º`}
+              color={COLORS.white}
+              size={100}
+              style={styles.textTemp} />
+          </View>
         </View>
 
         <View style={styles.extraInfoContainer}>
