@@ -80,7 +80,7 @@ const WeatherInfo = (props) => {
         <Title text={weather.weather[0].description} color={COLORS.white} size={17} />
         <View style={styles.rowTemp}>
           <Image source={{ uri: iconWeather, width: 200, height: 200 }} style={styles.icon} />
-          <View style={{ position: 'relative' }}>
+          <View style={{ position: 'relative', zIndex: 2 }}>
             <Title
               text={`${roundNumber(weather.main.temp)}º`}
               color={COLORS.black}
