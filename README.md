@@ -14,6 +14,14 @@
 
 Climate App, é um aplicativo voltado para mostrar informações geográficas e climaticas baseado na localização atual do usuário.
 
+**iOS Preview**
+
+![](https://media1.giphy.com/media/PB27UzPU14DtCMkuCG/giphy.gif)
+
+**Android Print**
+
+<img src="https://i.ibb.co/cyKV2Qy/Screenshot-2021-01-11-09-23-13.png" width="290">
+
 ## Requisitos
 
 - iOS 9.0 ou superior
